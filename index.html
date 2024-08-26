@@ -26,18 +26,31 @@
 
         <div class="row d-flex justify-content-center align-items-center">
 
-            <section class=" col-lg-4 text-center p-5">
-                <h1 class="mon_titulo">¡Bienvenido a mi portafolio!</h1>
-                <h2 class="mon_subtitulo">Te invito a conocer <a href="#" class="text-success">sobre mí</a> y <a
-                        href="#" class="text-warning">mis trabajos.</a></h2>
-            </section>
+            <div class="col-12">
+        
+                <div class="row d-flex justify-content-center align-items-center">
+        
+                    <!-- Sección de bienvenida con mensaje -->
+                    <section class="col-lg-4 text-center my-5">
+                        <h1 class="mon_titulo mb-3">¡Bienvenido a mi portafolio!</h1>
+                        <h2 class="mon_subtitulo mb-4">
+                            Te invito a conocer <a href="#sobre-mi" class="text-success">sobre mí</a> 
+                            y <a href="#mis-proyectos" class="text-warning">mis trabajos.</a>
+                        </h2>
+                    </section>
+        
+                    <!-- Sección de imagen -->
+                    <section class="col-lg-5 text-center my-5">
+                        <img class="img-fluid img-fondo" src="./images/ilustracion_2.jpg" alt="Ilustración" />
+                    </section>
+                </div>
+            </div>
+       
+        
 
 
-            <section class="col-lg-6 text-center my-5">
-                <img class="img-fondo" src="./images/ilustracion_1.png" alt="Ilustración">
-            </section>
 
-            <section class=" col-lg-10 accordion p-5 my-5">
+            <section class=" col-lg-10 accordion p-5 my-5" id="sobre-mi">
                 <h2 class="mon_titulo">Hola, soy Felipe Rodriguez Candia. Es un placer que estés aquí, déjame contarte
                     un
                     poco sobre mí</h2>
@@ -199,67 +212,82 @@
             <section id="contacto" class="col-lg-10 m-5">
                 <h2 class="mon_titulo text-center mb-4">Contacto</h2>
                 <div class="row">
+                    <!-- Formulario de Contacto -->
                     <div class="col-lg-6 mb-4">
                         <div class="card shadow-sm border-0">
                             <div class="card-body shadow">
                                 <h3 class="mon_subtitulo card-title">Envíame un mensaje</h3>
-                                <form action="ruta/a/procesar-formulario" method="post">
+                                <form id="contact-form" action="https://formspree.io/f/xrbzjebn" method="post">
                                     <div class="mb-3">
                                         <label for="nombre" class="mon_texto form-label">Nombre</label>
-                                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                        <input type="text" id="nombre" name="name" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="mon_texto form-label">Correo electrónico</label>
-                                        <input type="email" id="email" name="email" class="form-control" required>
+                                        <input type="email" id="email" name="_replyto" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="mensaje" class="mon_texto form-label">Mensaje</label>
-                                        <textarea id="mensaje" name="mensaje" class="form-control" rows="5"
+                                        <textarea id="mensaje" name="message" class="form-control" rows="5"
                                             required></textarea>
                                     </div>
+                                    <input type="hidden" name="_subject"
+                                        value="Nuevo mensaje desde el formulario de contacto">
                                     <button type="submit" class="mon_texto btn btn-primary">Enviar</button>
                                 </form>
                             </div>
                         </div>
                     </div>
 
-
-
-                    <!-- bloque de redes sociales -->
-                    <!-- /////////////////////////////////// -->
+                    <!-- Datos de Contacto -->
                     <div class="col-lg-6 mb-4">
                         <div class="card shadow-sm border-0">
                             <div class="card-body shadow">
-                                <h3 class="mon_subtitulo card-title mb-4">Mis Redes Sociales</h3>
-                                <div id="redes" class="d-flex align-items-center">
-                                    <a href="https://www.facebook.com" class="icon-f text-decoration-none mx-2">
-                                        <i class="fa-brands fa-facebook-f fa-1x"></i>
-                                    </a>
-                                    <a href="https://www.x.com" class="icon-x text-decoration-none mx-2">
-                                        <i class="fa-brands fa-twitter fa-1x"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com" class="icon-i text-decoration-none mx-2">
-                                        <i class="fa-brands fa-instagram fa-1x"></i>
-                                    </a>
-                                    <a href="https://www.github.com" class="icon-g text-decoration-none mx-2">
-                                        <i class="fa-brands fa-github fa-1x"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com" class="icon-l text-decoration-none mx-2">
-                                        <i class="fa-brands fa-linkedin fa-1x"></i>
-                                    </a>
+                                <h3 class="mon_subtitulo card-title mb-4">Datos de Contacto</h3>
+                                <div class="mb-3">
+                                    <p class="mon_texto"><strong>Correo Electrónico:</strong> <a
+                                            href="mailto:tuemail@dominio.com">felipe.rc.1992@gmail.com</a></p>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mon_texto"><strong>Teléfono:</strong> +56995013560</p>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mon_texto"><strong>Ubicación:</strong> Santiago, Chile</p>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mon_texto"><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM
+                                        - 6:00 PM</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- Redes Sociales -->
+                        <div class="col-lg-10 mb-4">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body shadow">
+                                    <h3 class="mon_subtitulo card-title mb-4">Mis Redes Sociales</h3>
+                                    <div id="redes" class="d-flex align-items-center">
+                                        <a href="https://github.com/ferodriguezc"
+                                            class="icon-g text-decoration-none mx-2" aria-label="GitHub">
+                                            <i class="fa-brands fa-github fa-1x"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/felipe-rodriguez-candia-7b1a89299/"
+                                            class="icon-l text-decoration-none mx-2" aria-label="LinkedIn">
+                                            <i class="fa-brands fa-linkedin fa-1x"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </section>
 
-
-
-
-
-
         </div>
+        </div>
+
+
     </main>
 
 

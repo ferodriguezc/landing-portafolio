@@ -6,7 +6,7 @@
 .mon_titulo {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 2.3rem; /* Tamaño grande para títulos principales */
+  font-size: 2.5rem; /* Tamaño grande para títulos principales */
   line-height: 1.2; /* Ajuste de altura de línea para mejor legibilidad */
   color: #333; /* Color oscuro para buena visibilidad */
   margin-bottom: 1rem; /* Espacio debajo del título */
