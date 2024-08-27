@@ -19,48 +19,54 @@
 </head>
 
 <body>
+
+
     <!-- Main content -->
-    <main class="container bg-body my-5" style="border-radius: 25px;">
+    <main class="container bg-body my-5 " style="border-radius: 25px;">
         <!-- About Me -->
 
 
         <div class="row d-flex justify-content-center align-items-center">
 
             <div class="col-12">
-        
+
                 <div class="row d-flex justify-content-center align-items-center">
-        
+
                     <!-- Sección de bienvenida con mensaje -->
                     <section class="col-lg-4 text-center my-5">
                         <h1 class="mon_titulo mb-3">¡Bienvenido a mi portafolio!</h1>
                         <h2 class="mon_subtitulo mb-4">
-                            Te invito a conocer <a href="#sobre-mi" class="text-success">sobre mí</a> 
+                            Te invito a conocer <a href="#sobre-mi" class="text-success">sobre mí</a>
                             y <a href="#mis-proyectos" class="text-warning">mis trabajos.</a>
                         </h2>
                     </section>
-        
+
                     <!-- Sección de imagen -->
                     <section class="col-lg-5 text-center my-5">
                         <img class="img-fluid img-fondo" src="./images/ilustracion_2.jpg" alt="Ilustración" />
                     </section>
                 </div>
             </div>
-       
-        
 
 
 
-            <section class=" col-lg-10 accordion p-5 my-5" id="sobre-mi">
-                <h2 class="mon_titulo">Hola, soy Felipe Rodriguez Candia. Es un placer que estés aquí, déjame contarte
+
+
+            <section class=" col-lg-10 accordion p-5 my-5 text-center" id="sobre-mi">
+                <h2 class="mon_titulo">Hola, soy Felipe Rodriguez Candia. Es un placer que estés aquí, déjame
+                    contarte
                     un
                     poco sobre mí</h2>
-                <p class="mon_texto">Desde pequeño, siempre me ha encantado el mundo de la tecnología. Me pasaba horas
+                <p class="mon_texto">Desde pequeño, siempre me ha encantado el mundo de la tecnología. Me pasaba
+                    horas
                     investigando sobre computación, desarmando mis computadoras y descubriendo cómo funcionan sus
-                    componentes. Con el tiempo, mi interés se enfocó en la programación, que me permite dar vida a mis
+                    componentes. Con el tiempo, mi interés se enfocó en la programación, que me permite dar vida a
+                    mis
                     ideas
                     y convertirlas en algo tangible. Además, me apasiona el diseño visual, lo que me permite
                     complementar
-                    mis habilidades como programador. Mi objetivo es crear páginas web y aplicaciones innovadoras que
+                    mis habilidades como programador. Mi objetivo es crear páginas web y aplicaciones innovadoras
+                    que
                     unan
                     lo mejor de la programación y el diseño.</p>
             </section>
@@ -136,7 +142,8 @@
                             <div class="card-body bg-body-terciary shadow">
                                 <h3 class="mon_subtitulo card-title">Primer portafolio</h3>
                                 <div id="p1" class="d-none transition-height">
-                                    <p class="mon_texto card-text">Este portafolio es una recopilación de mis primeros
+                                    <p class="mon_texto card-text">Este portafolio es una recopilación de mis
+                                        primeros
                                         trabajos en desarrollo web, enfocados principalmente en el diseño y la
                                         programación
                                         frontend. Utilizando HTML5, CSS3 y JavaScript, he creado este sitio web para
@@ -161,13 +168,17 @@
                             <div class="card-body bg-body-terciary shadow">
                                 <h3 class="mon_subtitulo card-title">Portafolio de Eugenia Garrido</h3>
                                 <div id="p2" class="d-none transition-height">
-                                    <p class="mon_texto card-text">Este portafolio es uno de mis primeros trabajos en
+                                    <p class="mon_texto card-text">Este portafolio es uno de mis primeros trabajos
+                                        en
                                         desarrollo web, centrado en el y la programación frontend. Utilizando HTML5,
                                         CSS3 y JavaScript, creé este sitio
-                                        web para mostrar las habilidades y proyectos de Eugenia en diseño de vestuario.
+                                        web para mostrar las habilidades y proyectos de Eugenia en diseño de
+                                        vestuario.
                                         Este
-                                        proyecto me permitió seguir creciendo y adquiriendo conocimientos en tecnologías
-                                        como Bootstrap, HTML y JavaScript, entre otros. Aunque es un proyecto básico,
+                                        proyecto me permitió seguir creciendo y adquiriendo conocimientos en
+                                        tecnologías
+                                        como Bootstrap, HTML y JavaScript, entre otros. Aunque es un proyecto
+                                        básico,
                                         refleja
                                         mi progreso en el desarrollo frontend.</p>
                                     <img src="./images/img_proyecto/portafolio_Eugenia.png"
@@ -186,10 +197,12 @@
                             <div class="card-body bg-body-terciary shadow">
                                 <h3 class="mon_subtitulo card-title">Extensión VSC ComandoExpress</h3>
                                 <div id="p3" class="d-none transition-height">
-                                    <p class="mon_texto card-text">ComandoExpress es una extensión para Visual Studio
+                                    <p class="mon_texto card-text">ComandoExpress es una extensión para Visual
+                                        Studio
                                         Code que permite ejecutar archivos con la extensión .fs directamente en la
                                         consola de comandos. Esta herramienta
-                                        facilita la integración y ejecución de comandos desde tu entorno de desarrollo,
+                                        facilita la integración y ejecución de comandos desde tu entorno de
+                                        desarrollo,
                                         optimizando tu flujo de trabajo.</p>
                                     <img src="./images/img_proyecto/Comandoexpress.png"
                                         alt="Imagen de la extensión ComandoExpress" class="img-fluid border-black mb-3">
@@ -213,31 +226,34 @@
                 <h2 class="mon_titulo text-center mb-4">Contacto</h2>
                 <div class="row">
                     <!-- Formulario de Contacto -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body shadow">
-                                <h3 class="mon_subtitulo card-title">Envíame un mensaje</h3>
-                                <form id="contact-form" action="https://formspree.io/f/xrbzjebn" method="post">
-                                    <div class="mb-3">
-                                        <label for="nombre" class="mon_texto form-label">Nombre</label>
-                                        <input type="text" id="nombre" name="name" class="form-control" required>
+
+                    <section id="contacto" class="col-lg-10 m-5">
+                        <h2 class="mon_titulo text-center mb-4">Contacto</h2>
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="card shadow-sm border-0">
+                                    <div class="card-body shadow">
+                                        <h3 class="mon_subtitulo card-title">Envíame un mensaje</h3>
+                                        <form
+                                          action="https://formspree.io/f/xrbzjebn"
+                                          method="POST"
+                                        >
+                                          <div class="mb-3">
+                                            <label for="email" class="mon_texto form-label">Tu correo electrónico</label>
+                                            <input type="email" id="email" name="email" class="form-control" required>
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="mensaje" class="mon_texto form-label">Tu mensaje</label>
+                                            <textarea id="mensaje" name="message" class="form-control" rows="5" required></textarea>
+                                          </div>
+                                          <button type="submit" class="mon_texto btn btn-primary">Enviar</button>
+                                        </form>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="email" class="mon_texto form-label">Correo electrónico</label>
-                                        <input type="email" id="email" name="_replyto" class="form-control" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="mensaje" class="mon_texto form-label">Mensaje</label>
-                                        <textarea id="mensaje" name="message" class="form-control" rows="5"
-                                            required></textarea>
-                                    </div>
-                                    <input type="hidden" name="_subject"
-                                        value="Nuevo mensaje desde el formulario de contacto">
-                                    <button type="submit" class="mon_texto btn btn-primary">Enviar</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    
 
                     <!-- Datos de Contacto -->
                     <div class="col-lg-6 mb-4">
@@ -246,7 +262,7 @@
                                 <h3 class="mon_subtitulo card-title mb-4">Datos de Contacto</h3>
                                 <div class="mb-3">
                                     <p class="mon_texto"><strong>Correo Electrónico:</strong> <a
-                                            href="mailto:tuemail@dominio.com">felipe.rc.1992@gmail.com</a></p>
+                                            href="felipe.rc.1992@gmail.com">felipe.rc.1992@gmail.com</a></p>
                                 </div>
                                 <div class="mb-3">
                                     <p class="mon_texto"><strong>Teléfono:</strong> +56995013560</p>
@@ -255,7 +271,8 @@
                                     <p class="mon_texto"><strong>Ubicación:</strong> Santiago, Chile</p>
                                 </div>
                                 <div class="mb-3">
-                                    <p class="mon_texto"><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM
+                                    <p class="mon_texto"><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00
+                                        AM
                                         - 6:00 PM</p>
                                 </div>
                             </div>
@@ -265,7 +282,7 @@
 
 
                         <!-- Redes Sociales -->
-                        <div class="col-lg-10 mb-4">
+                        <div class="col-lg-12 mb-4">
                             <div class="card shadow-sm border-0">
                                 <div class="card-body shadow">
                                     <h3 class="mon_subtitulo card-title mb-4">Mis Redes Sociales</h3>
@@ -292,11 +309,20 @@
 
 
 
+
+
+
     <!-- bloque de footer -->
     <!-- /////////////////////////////////// -->
     <footer class="bg-dark text-light text-center p-3">
         <p class="mb-0">&copy; 2024 Felipe Rodríguez Candia. Todos los derechos reservados.</p>
     </footer>
+
+
+    <!-- Loader -->
+    <div id="loader" class="loader-container">
+        <div class="loader"></div>
+    </div>
 
 
 
@@ -331,6 +357,14 @@
             });
         });
     </script>
+
+    <script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
+        });
+    </script>
+
 
 
 
