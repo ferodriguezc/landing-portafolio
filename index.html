@@ -222,38 +222,36 @@
 
             <!-- bloque de contacto -->
             <!-- /////////////////////////////////// -->
-            <section id="contacto" class="col-lg-10 m-5">
+            <section id="contacto" class="col-lg-10 my-5">
                 <h2 class="mon_titulo text-center mb-4">Contacto</h2>
                 <div class="row">
-                    <!-- Formulario de Contacto -->
 
-                    <section id="contacto" class="col-lg-10 m-5">
-                        <h2 class="mon_titulo text-center mb-4">Contacto</h2>
-                        <div class="row">
-                            <div class="col-lg-6 mb-4">
-                                <div class="card shadow-sm border-0">
-                                    <div class="card-body shadow">
-                                        <h3 class="mon_subtitulo card-title">Envíame un mensaje</h3>
-                                        <form
-                                          action="https://formspree.io/f/xrbzjebn"
-                                          method="POST"
-                                        >
-                                          <div class="mb-3">
-                                            <label for="email" class="mon_texto form-label">Tu correo electrónico</label>
-                                            <input type="email" id="email" name="email" class="form-control" required>
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="mensaje" class="mon_texto form-label">Tu mensaje</label>
-                                            <textarea id="mensaje" name="message" class="form-control" rows="5" required></textarea>
-                                          </div>
-                                          <button type="submit" class="mon_texto btn btn-primary">Enviar</button>
-                                        </form>
+                    <!-- Formulario de Contacto -->
+                    <div class="col-lg-5 mb-4">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body shadow">
+                                <h3 class="mon_subtitulo card-title">Envíame un mensaje</h3>
+                                <form action="https://formspree.io/f/xrbzjebn" method="POST">
+                                    <div class="mb-3">
+                                        <label for="name" class="mon_texto form-label">Tu nombre</label>
+                                        <input type="name" id="name" name="name" class="form-control" required>
                                     </div>
-                                </div>
+
+                                    <div class="mb-3">
+                                        <label for="email" class="mon_texto form-label">Tu correo electrónico</label>
+                                        <input type="email" id="email" name="email" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="mon_texto form-label">Tu mensaje</label>
+                                        <textarea id="mensaje" name="message" class="form-control" rows="5"
+                                            required></textarea>
+                                    </div>
+                                    <button type="submit" class="mon_texto btn btn-primary">Enviar</button>
+                                </form>
                             </div>
                         </div>
-                    </section>
-                    
+                    </div>
 
                     <!-- Datos de Contacto -->
                     <div class="col-lg-6 mb-4">
@@ -299,15 +297,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+
             </section>
-
         </div>
-        </div>
-
-
     </main>
-
-
 
 
 
