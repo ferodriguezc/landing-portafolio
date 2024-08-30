@@ -16,13 +16,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorig>
+
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" crossorigin="anonymous"
+        defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
 
 
     <!-- Main content -->
-    <main class="container bg-body my-5 " style="border-radius: 25px;">
+    <main class="container bg-body" style="border-radius: 25px;">
         <!-- About Me -->
 
 
@@ -47,8 +56,6 @@
                     </section>
                 </div>
             </div>
-
-
 
 
 
@@ -128,32 +135,42 @@
                 </div>
             </section>
 
+
+
+
+
             <!-- Mis Proyectos -->
             <!-- //////////////////////////////// -->
-            <section id="mis-proyectos" class="col-lg-10 my-5">
+
+            <section id="mis-proyectos" class="col-10 my-6">
+
                 <h2 class="mon_titulo text-center mb-4">Mis Proyectos</h2>
-                <div class="row">
 
 
-
-                    <!-- Project 1 -->
-                    <div class="col-12 mb-4">
-                        <div class="card shadow-sm border-0" data-target="p1">
-                            <div class="card-body bg-body-terciary shadow">
+                <!-- Slider main container -->
+                <div class="swiper card  p-5 overflow-hidden">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="">
                                 <h3 class="mon_subtitulo card-title">Primer portafolio</h3>
-                                <div id="p1" class="d-none transition-height">
-                                    <p class="mon_texto card-text">Este portafolio es una recopilación de mis
-                                        primeros
-                                        trabajos en desarrollo web, enfocados principalmente en el diseño y la
-                                        programación
-                                        frontend. Utilizando HTML5, CSS3 y JavaScript, he creado este sitio web para
-                                        presentar mis
-                                        habilidades y proyectos. A través de este portafolio, puedes explorar los
-                                        distintos proyectos que he desarrollado, cada uno demostrando mi creciente
-                                        dominio en la
-                                        creación de interfaces web intuitivas y responsivas.</p>
+                                <div id="p1" class="transition-height">
+                                    <p class="mon_texto card-text">
+                                        Este portafolio es una recopilación de mis primeros trabajos en
+                                        desarrollo web,
+                                        enfocados principalmente en el diseño y la programación frontend.
+                                        Utilizando
+                                        HTML5, CSS3 y JavaScript, he creado este sitio web para presentar
+                                        mis habilidades
+                                        y proyectos. A través de este portafolio, puedes explorar los
+                                        distintos proyectos
+                                        que he desarrollado, cada uno demostrando mi creciente dominio en la
+                                        creación
+                                        de interfaces web intuitivas y responsivas.
+                                    </p>
                                     <img src="./images/img_proyecto/portafolio_Felipe.PNG"
-                                        alt="imagen de mi primer portafolio" class="img-fluid border-black">
+                                        alt="Imagen de mi primer portafolio" class="img-fluid border-5">
                                     <div class="text-center my-3">
                                         <a href="https://ferodriguezc.github.io/Pagina_portafolio/"
                                             class="btn btn-primary">Ver Proyecto</a>
@@ -161,146 +178,185 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="col-12 mb-4">
-                        <div class="card shadow-sm border-0" data-target="p2">
-                            <div class="card-body bg-body-terciary shadow">
-                                <h3 class="mon_subtitulo card-title">Portafolio de Eugenia Garrido</h3>
-                                <div id="p2" class="d-none transition-height">
-                                    <p class="mon_texto card-text">Este portafolio es uno de mis primeros trabajos
-                                        en
-                                        desarrollo web, centrado en el y la programación frontend. Utilizando HTML5,
-                                        CSS3 y JavaScript, creé este sitio
-                                        web para mostrar las habilidades y proyectos de Eugenia en diseño de
-                                        vestuario.
-                                        Este
-                                        proyecto me permitió seguir creciendo y adquiriendo conocimientos en
-                                        tecnologías
-                                        como Bootstrap, HTML y JavaScript, entre otros. Aunque es un proyecto
-                                        básico,
-                                        refleja
-                                        mi progreso en el desarrollo frontend.</p>
-                                    <img src="./images/img_proyecto/portafolio_Eugenia.png"
-                                        alt="Imagen del portafolio de Eugenia Garrido" class="img-fluid border-black">
-                                    <div class="text-center my-3">
-                                        <a href="https://ferodriguezc.github.io/pagina_portafolio_eugenia/"
-                                            class="btn btn-primary">Ver Proyecto</a>
+                        <div class="swiper-slide">
+                            <div class="card shadow-sm border-0" data-target="p2">
+                                <div class="card-body bg-body-terciary shadow">
+                                    <h3 class="mon_subtitulo card-title">Portafolio de Eugenia Garrido</h3>
+                                    <div id="p2" class="transition-height">
+                                        <p class="mon_texto card-text">Este portafolio es uno de mis primeros
+                                            trabajos en desarrollo web, centrado en la programación frontend.
+                                            Utilizando HTML5, CSS3 y JavaScript, creé este sitio web para
+                                            mostrar las habilidades y proyectos de Eugenia en diseño de
+                                            vestuario. Este proyecto me permitió seguir creciendo y adquiriendo
+                                            conocimientos en tecnologías como Bootstrap, HTML y JavaScript,
+                                            entre otros. Aunque es un proyecto básico, refleja mi progreso en el
+                                            desarrollo frontend.</p>
+                                        <img src="./images/img_proyecto/portafolio_Eugenia.png"
+                                            alt="Imagen del portafolio de Eugenia Garrido"
+                                            class="img-fluid border-black">
+                                        <div class="text-center my-3">
+                                            <a href="https://ferodriguezc.github.io/pagina_portafolio_eugenia/"
+                                                class="btn btn-primary">Ver Proyecto</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Project 3 -->
-                    <div class="col-12 mb-4">
-                        <div class="card shadow-sm border-0" data-target="p3">
-                            <div class="card-body bg-body-terciary shadow">
-                                <h3 class="mon_subtitulo card-title">Extensión VSC ComandoExpress</h3>
-                                <div id="p3" class="d-none transition-height">
-                                    <p class="mon_texto card-text">ComandoExpress es una extensión para Visual
-                                        Studio
-                                        Code que permite ejecutar archivos con la extensión .fs directamente en la
-                                        consola de comandos. Esta herramienta
-                                        facilita la integración y ejecución de comandos desde tu entorno de
-                                        desarrollo,
-                                        optimizando tu flujo de trabajo.</p>
-                                    <img src="./images/img_proyecto/Comandoexpress.png"
-                                        alt="Imagen de la extensión ComandoExpress" class="img-fluid border-black mb-3">
-                                    <video src="video/extencion ComandoExpress.mp4" controls class="img-fluid mb-3">Tu
-                                        navegador no soporta la reproducción de videos.</video>
-                                    <div class="text-center">
-                                        <a href="https://github.com/ferodriguezc/ComandoExpress"
-                                            class="btn btn-primary">Ver
-                                            Proyecto</a>
+
+                        <div class="swiper-slide">
+                            <div class="card shadow-sm border-0" data-target="p3">
+                                <div class="card-body bg-body-terciary shadow">
+                                    <h3 class="mon_subtitulo card-title">Extensión VSC ComandoExpress</h3>
+                                    <div id="p3" class="transition-height">
+                                        <p class="mon_texto card-text">ComandoExpress es una extensión para
+                                            Visual Studio Code que permite ejecutar archivos con la extensión
+                                            .fs directamente en la consola de comandos. Esta herramienta
+                                            facilita la integración y ejecución de comandos desde tu entorno de
+                                            desarrollo, optimizando tu flujo de trabajo.</p>
+                                        <img src="./images/img_proyecto/Comandoexpress.png"
+                                            alt="Imagen de la extensión ComandoExpress"
+                                            class="img-fluid border-black mb-3">
+                                        <video src="video/extencion ComandoExpress.mp4" controls
+                                            class="img-fluid mb-3 w-50">Tu
+                                            navegador no soporta la reproducción de
+                                            videos.</video>
+                                        <div class="text-center">
+                                            <a href="https://github.com/ferodriguezc/ComandoExpress"
+                                                class="btn btn-primary">Ver Proyecto</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper-slide">
+                            <div class="card shadow-sm border-0" data-target="p4">
+                                <div class="card-body bg-body-terciary shadow">
+                                    <h3 class="mon_subtitulo card-title">Landing page para empresa mayorista
+                                    </h3>
+                                    <div id="p4" class="transition-height">
+                                        <p class="mon_texto card-text">"Mi Mercado Ahorro" fue un proyecto que
+                                            desarrollé durante mi proceso de práctica profesional, enfocado en
+                                            la creación de una landing page. A través de este proyecto, logré
+                                            seguir perfeccionando y ampliando mis conocimientos en HTML, CSS y
+                                            JavaScript, aplicando estos lenguajes para crear y mejorar la
+                                            funcionalidad y el diseño de la plataforma.</p>
+                                        <img src="./images/img_proyecto/Mercado_ahorro.png"
+                                            alt="Imagen de landing mercado ahorro" class="img-fluid border-black mb-3">
+                                        <div class="text-center">
+                                            <a href="https://www.mimercadoahorro.cl/" class="btn btn-primary">Ver
+                                                Proyecto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        ...
                     </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev text-black"></div>
+                    <div class="swiper-button-next text-black"></div>
+
+
                 </div>
+
+
             </section>
 
             <!-- bloque de contacto -->
             <!-- /////////////////////////////////// -->
-            <section id="contacto" class="col-lg-10 my-5">
-                <h2 class="mon_titulo text-center mb-4">Contacto</h2>
-                <div class="row">
+            <section id="contacto" class="col-lg-12 justify-content-evenly mt-5">
 
-                    <!-- Formulario de Contacto -->
-                    <div class="col-lg-5 mb-4">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body shadow">
+                <h2 class="mon_titulo text-center ">Contacto</h2>
+                <!-- /////////////////////////////////// -->
+                <div class="row d-flex flex-row justify-content-center align-items-center">
+                    <div class="col-lg-6 d-flex justify-content-center p-5">
+
+                        <!-- Formulario de Contacto -->
+
+                        <div class="col-lg-10 col-12 card  border-0 m-2">
+                            <div class="card card-body shadow-lg">
                                 <h3 class="mon_subtitulo card-title">Envíame un mensaje</h3>
                                 <form action="https://formspree.io/f/xrbzjebn" method="POST">
-                                    <div class="mb-3">
+                                    <div class="mb-3 d-flex flex-column vh-50">
                                         <label for="name" class="mon_texto form-label">Tu nombre</label>
-                                        <input type="name" id="name" name="name" class="form-control" required>
+                                        <input type="name" id="name" name="name" class="form-control border-5" required>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="email" class="mon_texto form-label">Tu correo electrónico</label>
-                                        <input type="email" id="email" name="email" class="form-control" required>
+                                        <label for="email" class="mon_texto form-label">Tu correo
+                                            electrónico</label>
+                                        <input type="email" id="email" name="email" class="form-control border-5"
+                                            required>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="mensaje" class="mon_texto form-label">Tu mensaje</label>
-                                        <textarea id="mensaje" name="message" class="form-control" rows="5"
+                                        <textarea id="mensaje" name="message" class="form-control border-5" rows="5"
                                             required></textarea>
                                     </div>
                                     <button type="submit" class="mon_texto btn btn-primary">Enviar</button>
                                 </form>
                             </div>
                         </div>
+
                     </div>
-
                     <!-- Datos de Contacto -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body shadow">
-                                <h3 class="mon_subtitulo card-title mb-4">Datos de Contacto</h3>
-                                <div class="mb-3">
-                                    <p class="mon_texto"><strong>Correo Electrónico:</strong> <a
-                                            href="felipe.rc.1992@gmail.com">felipe.rc.1992@gmail.com</a></p>
-                                </div>
-                                <div class="mb-3">
-                                    <p class="mon_texto"><strong>Teléfono:</strong> +56995013560</p>
-                                </div>
-                                <div class="mb-3">
-                                    <p class="mon_texto"><strong>Ubicación:</strong> Santiago, Chile</p>
-                                </div>
-                                <div class="mb-3">
-                                    <p class="mon_texto"><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00
-                                        AM
-                                        - 6:00 PM</p>
-                                </div>
+                    <div class="col-6 justify-content-center p-5">
+                        <!-- /////////////////////////////////// -->
+
+                        <div class="col-10 card card-body shadow my-2">
+                            <h3 class="mon_subtitulo card-title mb-4">Datos de Contacto</h3>
+                            <div class="mb-3">
+                                <p class="mon_texto"><strong>Correo Electrónico:</strong> <a
+                                        href="felipe.rc.1992@gmail.com">felipe.rc.1992@gmail.com</a></p>
                             </div>
-
-
+                            <div class="mb-3">
+                                <p class="mon_texto"><strong>Teléfono:</strong> +56995013560</p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="mon_texto"><strong>Ubicación:</strong> Santiago, Chile</p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="mon_texto"><strong>Horario de Atención:</strong> Lunes a Viernes,
+                                    9:00
+                                    AM
+                                    - 6:00 PM</p>
+                            </div>
                         </div>
 
 
                         <!-- Redes Sociales -->
-                        <div class="col-lg-12 mb-4">
-                            <div class="card shadow-sm border-0">
-                                <div class="card-body shadow">
-                                    <h3 class="mon_subtitulo card-title mb-4">Mis Redes Sociales</h3>
-                                    <div id="redes" class="d-flex align-items-center">
-                                        <a href="https://github.com/ferodriguezc"
-                                            class="icon-g text-decoration-none mx-2" aria-label="GitHub">
-                                            <i class="fa-brands fa-github fa-1x"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/felipe-rodriguez-candia-7b1a89299/"
-                                            class="icon-l text-decoration-none mx-2" aria-label="LinkedIn">
-                                            <i class="fa-brands fa-linkedin fa-1x"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="col-10 card card-body shadow my-2">
+
+                            <h3 class="mon_subtitulo card-title mb-4">Mis Redes Sociales</h3>
+                            <div id="redes" class="d-flex align-items-center">
+                                <a href="https://github.com/ferodriguezc" class="icon-g text-decoration-none mx-2"
+                                    aria-label="GitHub">
+                                    <i class="fa-brands fa-github fa-1x"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/felipe-rodriguez-candia-7b1a89299/"
+                                    class="icon-l text-decoration-none mx-2" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin fa-1x"></i>
+                                </a>
+
                             </div>
                         </div>
+
+
+
                     </div>
-
-
+                </div>
             </section>
+        </div>
+
+        </div>
+
+
+        </section>
         </div>
     </main>
 
@@ -327,30 +383,42 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
 
 
 
     <!-- Script despliege proyectos -->
     <script>
 
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.card').forEach((card) => {
-                card.addEventListener('click', () => {
-                    const targetId = card.getAttribute('data-target');
-                    const targetElement = document.getElementById(targetId);
 
-                    if (targetElement) {
-                        if (targetElement.classList.contains('d-none')) {
-                            targetElement.classList.remove('d-none');
-                            targetElement.classList.add('d-block');
-                        } else {
-                            targetElement.classList.remove('d-block');
-                            targetElement.classList.add('d-none');
-                        }
-                    }
-                });
-            });
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'flip',
+  flipEffect: {
+    slideShadows: false,
+  },
         });
+
+
+
+
+
     </script>
 
     <script>
