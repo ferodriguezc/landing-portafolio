@@ -1,3 +1,9 @@
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+
 /* =======================
    Fuentes y Texto
 ======================= */
@@ -143,8 +149,8 @@ body {
 
 .img-fondo {
   width: 100%; /* Ancho en porcentaje */
-  min-width: 400px; /* Ancho mínimo fijo */
-  max-width: 750px; /* Ancho máximo fijo, opcional */
+  min-width: 300px; /* Ancho mínimo fijo */
+
   margin: auto;
   display: block;
 }
